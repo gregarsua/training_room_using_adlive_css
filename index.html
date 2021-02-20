@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="">
+	<title>Adlive Template</title>
+	
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJLQ9VQ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS読込 -->
+    <link rel="stylesheet" href="assets/css_2/normalize.css">
+    <link rel="stylesheet" href="assets/css_2/style.css">
+    <link href="js/slick.css" rel="stylesheet" type="text/css">
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- ファビコン読込 -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- 検索有無設定 -->
+    <!-- jquery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/easy-rollover.js"></script>
+    <script src="https://use.typekit.net/zzb5mon.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/base-color.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+    <!-- スムーススクロール -->
+    <script type="text/javascript">
+        $(function () {
+            $('a[href^="#"]').on('click', function () {
+                var speed = 1000;
+                var href = $(this).attr('href');
+                var target = $(href == '#' || href == '' ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+
+    <style id='base_val' type='text/css'></style>
+
+    <style type='text/css'>
+        table {
+            margin: auto;
+        }
+
+        /*表示切替*/
+        html body .view_pc {
+            display: block !important;
+        }
+
+        html body table.view_pc {
+            display: table !important;
+        }
+
+        html body table.view_pc tr {
+            display: table !important;
+        }
+
+        html body table.view_pc th {
+            display: table !important;
+        }
+
+        html body table.view_pc td {
+            display: table !important;
+        }
+
+        html body .view_pctab {
+            display: block !important;
+        }
+
+        html body table.view_pctab {
+            display: table !important;
+        }
+
+        html body table.view_pctab tr {
+            display: table !important;
+        }
+
+        html body table.view_pctab th {
+            display: table !important;
+        }
+
+        html body table.view_pctab td {
+            display: table !important;
+        }
+
+        html body .view_tab {
+            display: none !important;
+        }
+
+        html body .view_sp {
+            display: none !important;
+        }
+
+        html body .view_tabsp {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: block !important;
+            }
+
+            html body table.view_pctab {
+                display: table !important;
+            }
+
+            html body table.view_pctab tr {
+                display: table !important;
+            }
+
+            html body table.view_pctab th {
+                display: table !important;
+            }
+
+            html body table.view_pctab td {
+                display: table !important;
+            }
+
+            html body .view_tab {
+                display: block !important;
+            }
+
+            html body table.view_tab {
+                display: table !important;
+            }
+
+            html body table.view_tab tr {
+                display: table !important;
+            }
+
+            html body table.view_tab th {
+                display: table !important;
+            }
+
+            html body table.view_tab td {
+                display: table !important;
+            }
+
+            html body .view_sp {
+                display: none !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: none !important;
+            }
+
+            html body .view_tab {
+                display: none !important;
+            }
+
+            html body .view_sp {
+                display: block !important;
+            }
+
+            html body table.view_sp {
+                display: table !important;
+            }
+
+            html body table.view_sp tr {
+                display: table !important;
+            }
+
+            html body table.view_sp th {
+                display: table !important;
+            }
+
+            html body table.view_sp td {
+                display: table !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        /* エラーメッセージ　赤文字設定 */
+        .error_msg {
+            color: #ff2e5a !important;
+        }
+    </style>
+    <style type='text/css'>
+
+        @font-face {
+            font-family: 'hirakakupro_w6';
+            src: url('assets/fonts/hirakakupro-w6.otf');
+        }
+        @font-face {
+            font-family: 'hirakakupro_w3';
+            src: url('assets/fonts/hirakakupro-w3.otf');
+        }
+        @font-face {
+            font-family: 'shingopro_medium';
+            src: url('assets/fonts/AOTFShinGoProMedium.woff');
+        }
+        @font-face {
+            font-family: 'shingopro_bold';
+            src: url('assets/fonts/AOTFShinGoProBold.woff');
+        }
+        .hira_w6{
+            font-family: 'hirakakupro_w6';
+        }
+        .hira_w3{
+            font-family: 'hirakakupro_w3';
+        }
+        .shingopro_medium{
+            font-family: 'shingopro_medium';
+        }
+        .shingopro_bold{
+            font-family: 'shingopro_bold';
+        }
+
+        .flex_start{
+            align-items: flex-start;
+        }
+
+        .inline_block {
+            display: inline-block;
+        }
+
+        .main_txt_color2{
+            color: #00a3e0 !important;
+        }
+
+        .main_txt_color{
+            color: #59493f !important;
+        }
+
+        .mg_auto{
+            margin: 0 auto;
+        }
+
+        .txt_mg_0{
+            margin: 0;
+        }
+
+        .txt_p_0{
+            padding: 0;
+        }
+
+        .txt_pd_l_foot{
+            padding-left: 1.1vw;
+        }
+
+        .txt_deco{
+            text-decoration: none;
+        }
+
+        .foot_nav li{
+            position: relative;
+        }
+
+        .foot_bg{
+            background: #eaeff3;
+        }
+
+        .bg_wht_grey{
+            background-color: #f5f5f5;
+        }
+
+        .u_line_d_grey{
+            border-bottom: solid 1px #475160;
+        }
+
+        .u_line_b_skyblue{
+            border-bottom: solid 5px #00a3e0;
+        }
+
+        .u_line_top_d_grey{
+            border-top: solid 1px #475160;
+        }
+
+        .u_line_right_d_grey{
+            border-right: solid 2px #475160;
+        }
+
+        .undrag{
+            user-drag: none; 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        .flex_between {
+            justify-content: space-between;
+        }
+    </style>
+    <link rel="stylesheet" href="css/sp.css">
+</head>
+
+<body>
+    <header class="view_pc txt_tpad_1 txt_bpad_1 bg_white" style="border-bottom: 5px solid #00a3e0">
+        <div class="cont_wrapper_65 txt_tpad_05 txt_bpad_05">
+            <div class="wrapper_100 flex flex_center">
+                <div class="width_20">
+                    <div class="wrapper_100">
+                        <a href="index.html">
+                            <img src="assets/img/head_logo.png" class="fix_zoom undrag" alt="エコロジック">
+                        </a>
+                    </div>
+                </div>
+                <div class="width_10"></div>
+                <div class="width_26">
+                    <div class="wrapper_100">
+                        <div class="space_05"></div>
+                        <img src="assets/img/header_tel_img.png" class="fix_zoom undrag" alt="">
+                        <p class="shingopro_medium font_65 txt_mg_0">全て専門家が対応！  
+                            <span class="shingopro_medium font_65" style="color: #00a3e0;"> 受付時間 8:00〜22:00</span></p>
+                    </div>
+                </div>
+                <div class="width_2"></div>
+                <div class="width_20">
+                    <div class="wrapper_100">
+                            <img src="assets/img/header_btn_line.png" class="fix_zoom undrag square_btn" alt="">
+                    </div>
+                </div>
+                <div class="width_1">
+                </div>
+                <div class="width_20">
+                    <div class="wrapper_100">
+                        <a href="contact-form.php" class="">
+                            <img src="assets/img/header_btn_contactus.png" class="fix_zoom undrag square_btn" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="view_tabsp bg_white" style="border-bottom: 5px solid #00a3e0">
+        <div class="wrapper_95 flex flex_center txt_bpad_05 txt_tpad_05">
+            <div class="width_35">
+                <div class="wrapper_100">
+                    <a href="index.html">
+                        <img src="assets/img/head_logo.png" class="fix_zoom undrag" alt="エコロジック">
+                    </a>
+                </div>
+            </div>
+            <div class="width_33">
+                <div class="wrapper_100">
+                    <img src="assets/img/sp_header_text_img.png" class="fix_zoom undrag" alt="">
+                </div>
+            </div>
+            <div class="width_32">
+                <div class="wrapper_100">
+                    <img src="assets/img/card_logo.png" class="fix_zoom undrag" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="sec-1 wrapper_100">
+            <!-- BANNER PC VIEW -->
+            <div class="wrapper_100 view_pc" style="background-color: #e0f6ff;">
+                <img src="assets/img/hero_image_pc.png" class="fix_zoom undrag" alt="">
+            </div>
+            <!-- BANNER TAB&SP VIEW -->
+            <div class="view_tabsp">
+                <img src="assets/img/hero_image_sp.png" class="fix_zoom undrag" alt="">
+
+                <div class="wrapper">
+                    <div class="space_1"></div>
+                    <div class="wrapper_90">
+                        <img src="assets/img/sp_cv_text.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100">
+                        <a href="">
+                            <img src="assets/img/bt_tel.png" class="fix_zoom undrag square_btn" alt="">
+                        </a>
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100">
+                        <a href="">
+                            <img src="assets/img/bt_line.png" class="fix_zoom undrag square_btn" alt="">
+                        </a>
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100">
+                        <a href="">
+                            <img src="assets/img/bt_inquiry.png" class="fix_zoom undrag square_btn" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-1 wrapper_100" >
+            <div class="view_pc" style="background-color: #e0f6ff;">
+                <div class="space_5"></div>
+                <div class="wrapper_50">
+                    <img src="assets/img/spread_header_text.png" class="fix_zoom undrag" alt="">
+                </div>
+                <div class="space_1"></div>
+                <div class="wrapper_55" style="border-bottom: 5px solid #00a3e0;"></div>
+                <div class="space_3"></div>
+                <p class="font_100 hira_w6 main_txt_color line_h_200">エコロジックは、新型コロナウイルス感染症（COVID-19）対策として、<br>
+                    全スタッフが手洗い、うがい、消毒、除菌、マスクの着用につとめています。
+                </p>
+                <div class="space_3"></div>
+                <div class="wrapper_40">
+                    <div class="flex flex_center">
+                        <div class="width_30">
+                            <img src="assets/img/01.png" class="fix_zoom undrag" alt="">
+                            <p class="hira_w6 font_100 main_txt_color2">
+                                トラックや <br>作業車の消毒</p>
+                        </div>
+                        <div class="width_30">
+                            <img src="assets/img/02.png" class="fix_zoom undrag" alt="">
+                            <p class="hira_w6 font_100 main_txt_color2">
+                                毎朝始業前の<br>体温計測
+                            </p>
+                        </div>
+                        <div class="width_30">
+                            <img src="assets/img/03.png" class="fix_zoom undrag" alt="">
+                            <p class="hira_w6 font_100 main_txt_color2">
+                                お客様ごとに<br>新品のマスクを着用
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space_4"></div>
+                <p class="font_100 hira_w6 main_txt_color line_h_200">
+                    気温上昇による、作業者の熱中症を防ぐために、<br>
+                    人気のないところではマスクを外させていただく場合もございます。<br>
+                    ご理解、ご協力のほど、どうぞよろしくお願い申し上げます。
+                </p>
+                <div class="space_4"></div>
+        </div>
+            <div class="wrapper_100 view_tabsp">
+                <div class="space_5"></div>
+                <div class="wrapper_100 bg_img">
+                    <img src="assets/img/sp_header_bg.png" class="undrag" alt="">
+                    <p class="t_50 hira_w6 font_150 white bold">コロナ対策について</p>
+                </div>
+                <div class="common_wrapper">
+                    <p class="font_100 hira_w3 txt_left line_h_200 main_txt_color txt_mg_0">エコロジックは、新型コロナウイルス感染症
+                        （COVID-19）対策として、全スタッフが手洗い、う
+                        がい、消毒、除菌、マスクの着用につとめていま
+                        す。</p>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100 flex flex_center flex_between">
+                        <div class="width_33">
+                            <img src="assets/img/sp_01.png" class="fix_zoom undrag" alt="">
+                        </div>
+                        <div class="width_33">
+                            <img src="assets/img/sp_02.png" class="fix_zoom undrag" alt="">
+                        </div>
+                        <div class="width_33">
+                            <img src="assets/img/sp_03.png" class="fix_zoom undrag" alt="">
+                        </div>
+                    </div>
+                    <div class="space_2"></div>
+                    <p class="font_100 hira_w3 txt_left line_h_200 main_txt_color txt_mg_0">気温上昇による、作業者の熱中症を防ぐために、人気のないところではマスクを外させていただく場合もございます。<br>
+                        ご理解、ご協力のほど、どうぞよろしくお願い申し上げます。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-2 wrapper_100">
+            <div class="cont_wrapper_65 view_pc">
+                <div class="space_5"></div>
+                    <div class="wrapper_60">
+                        <img src="assets/img/dispossal_text_header.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="wrapper_65" style="border-bottom: 5px solid #00a3e0;"></div>
+                    <div class="space_3"></div>
+                    <p class="font_100 hira_w6 main_txt_color line_h_200">
+                        1点からでもOK!店舗様の粗大ゴミもご相談ください。
+                    </p>
+                    <div class="space_3"></div>
+
+                    <div class="wrapper_70">
+                        <div class="flex flex_center">
+                            <div class="width_30">
+                                <img src="assets/img/dispossal_img_01.png" class="fix_zoom undrag" alt="">
+                            </div>
+                            <div class="width_30">
+                                <img src="assets/img/dispossal_img_02.png" class="fix_zoom undrag" alt="">
+                            </div>
+                            <div class="width_30">
+                                <img src="assets/img/dispossal_img_03.png" class="fix_zoom undrag" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_70">
+                        <div class="flex flex_center">
+                            <div class="width_30">
+                                <img src="assets/img/dispossal_img_04.png" class="fix_zoom undrag" alt="">
+                            </div>
+                            <div class="width_30">
+                                <img src="assets/img/dispossal_img_05.png" class="fix_zoom undrag" alt="">
+                            </div>
+                            <div class="width_30">
+                                <img src="assets/img/dispossal_img_06.png" class="fix_zoom undrag" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space_5"></div>
+            </div>
+            <div class="wrapper_100 view_tabsp">
+                <div class="space_5"></div>
+                <div class="wrapper_100 bg_img">
+                    <img src="assets/img/sp_header_bg.png" class="undrag" alt="">
+                    <p class="t_50 hira_w6 font_150 white bold">不用品・粗大ゴミの処理は<br>
+                        まるっとおまかせ！</p>
+                </div>
+                <div class="common_wrapper">
+                    <p class="font_100 hira_w3 txt_center line_h_200 main_txt_color txt_mg_0">1点からでもOK！<br>
+                        店舗様の粗大ゴミもご相談ください。</p>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100 flex flex_center flex_between">
+                        <div class="width_48">
+                            <img src="assets/img/dispossal_img_01.png" class="fix_zoom undrag" alt="">
+                        </div>
+                        <div class="width_48">
+                            <img src="assets/img/dispossal_img_02.png" class="fix_zoom undrag" alt="">
+                        </div>
+                        <div class="space_2"></div>
+                        <div class="width_48">
+                            <img src="assets/img/dispossal_img_03.png" class="fix_zoom undrag" alt="">
+                        </div>
+                        <div class="width_48">
+                            <img src="assets/img/dispossal_img_04.png" class="fix_zoom undrag" alt="">
+                        </div>
+                        <div class="space_2"></div>
+                        <div class="width_48">
+                            <img src="assets/img/dispossal_img_05.png" class="fix_zoom undrag" alt="">
+                        </div>
+                        <div class="width_48">
+                            <img src="assets/img/dispossal_img_06.png" class="fix_zoom undrag" alt="">
+                        </div>
+                    </div>
+                    <div class="space_2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-3 ">
+            <div class="wrapper_100" style="background-color:#e0f6ff;">
+                <img src="assets/img/pc_webline_19,800.png" class="fix_zoom undrag view_pc" alt="">
+                <img src="assets/img/sp_webline_19,800.png" class="fix_zoom undrag view_tabsp" alt="">
+            </div>
+            
+        </section>
+        <section class="sec-4 view_pc"  style="background-color: #dff6ff;">
+            <div class="space_3"></div>
+                <div class="cont_wrapper_65">
+                    <div class="wrapper_55 txt_tpad_5 txt_bpad_4">
+                        <img src="assets/img/section_5_header_text_img.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_4"></div>
+                    <div class="bg_white box_radius_10 bg_img" style="border: 3px solid #00a3e0;">
+                        <div class="wrapper_95 flex_2 flex_center">
+                            <div class="f_sub width_50 txt_tpad_2 txt_bpad_2 txt_rpad_2">
+                                <img src="assets/img/pc_img_box_1.png" class="fix_zoom undrag" alt="">
+                            </div>
+
+                            <div class="f_sub width_50">
+                                <p class="main_txt_color2 font_125 hira_w6  txt_tpad_1 txt_left txt_mg_0">出張費・お見積もり・基本料金0円！<br>
+                                    追加料金一切なし！<br>
+                                    Web限定15,000円プラン！</p>
+                                <p class="hira_w6 font_100 txt_left line_h_150 main_txt_color" style="letter-spacing: 1.5px;">ご相談、お見積もりさせていただいた後は、追加料金は一切いただきません！不明点や懸念事項などございましたらご相談時にお気軽にお知らせください。経験のあるエコロジック専門スタッフがしっかりとご対応いたします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="t50_l0 width_18" style="left:-5%;">
+                            <img class="fix_zoom undrag" src="assets/img/relief.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="space_5"></div>
+                    <div class="bg_white box_radius_10 bg_img" style="border: 3px solid #00a3e0;">
+                        <div class="wrapper_95 flex_2 flex_center">
+                            <div class="f_sub width_50 txt_tpad_2 txt_bpad_2 txt_rpad_2">
+                                <img src="assets/img/pc_img_box_2.png" class="fix_zoom undrag" alt="">
+                            </div>
+
+                            <div class="f_sub width_50">
+                                <p class="main_txt_color2 font_125 hira_w6  txt_tpad_1 txt_left txt_mg_0">専門家が在籍。捨て方がわからないゴミも<br>
+                                    まるっとおまかせ！</p>
+                                <p class="hira_w6 font_100 txt_left line_h_150 main_txt_color" style="letter-spacing: 1.5px;">家電や大型家具、店舗ゴミなど、地域によって処分の仕方が様々なゴミも、まるっとおまかせください！捨てたいのにお家から出すのが難しくて放置されたままのゴミや、配線工事が必要なエアコンなど、専門家が直接お伺いして、安全に処理いたします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="t50_l0 width_18" style="left:-5%;">
+                            <img class="fix_zoom undrag" src="assets/img/easy.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="space_5"></div>
+                    <div class="bg_white box_radius_10 bg_img" style="border: 3px solid #00a3e0;">
+                        <div class="wrapper_95 flex_2 flex_center">
+                            <div class="f_sub width_50 txt_tpad_2 txt_bpad_2 txt_rpad_2">
+                                <img src="assets/img/pc_img_box_3.png" class="fix_zoom undrag" alt="">
+                            </div>
+
+                            <div class="f_sub width_50">
+                                <p class="main_txt_color2 font_125 hira_w6  txt_tpad_1 txt_left txt_mg_0">専門家が在籍。捨て方がわからないゴミも<br>
+                                    まるっとおまかせ！</p>
+                                <p class="hira_w6 font_100 txt_left line_h_150 main_txt_color" style="letter-spacing: 1.5px;">家電や大型家具、店舗ゴミなど、地域によって処分の仕方が様々なゴミも、まるっとおまかせください！捨てたいのにお家から出すのが難しくて放置されたままのゴミや、配線工事が必要なエアコンなど、専門家が直接お伺いして、安全に処理いたします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="t50_l0 width_18" style="left:-5%;">
+                            <img class="fix_zoom undrag" src="assets/img/same_day_correspondence.png" alt="">
+                        </div>
+                    </div>
+                    <div class="space_5"></div>
+                </div>
+        </section>
+        <!-- MOBILE VIEW -->
+        <section class="sec-4 view_tabsp">
+                    <div class="wrapper_100 bg_img">
+                        <img src="assets/img/sp_header_bg.png" class="fix_zoom undrag" alt="">
+                        <div class="t0_l50" style="top: 20%;">
+                            <p class="hira_w6 font_150 white bold">選ばれている<br>
+                                4つの理由</p>
+                        </div>
+
+                        <div class="bg_img">
+                            <img src="assets/img/sp_img_box_1.png" class="fix_zoom" alt="">
+                            <div class="bl_0">
+                                <p class="txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold hira_w6"
+                                    style="background: rgba(0, 162, 244, 0.7) !important;">出張費・お見積もり・基本料金0円！</p>
+                                <p class="width_61 txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold tspace_05 bspace_05 hira_w6"
+                                    style="background: rgba(0, 162, 244, 0.7) !important;">追加料金一切なし！</p>
+                                <p class="width_85 txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold hira_w6"
+                                    style="background: rgba(0, 162, 244, 0.7) !important;">Web限定15,000円プラン！</p>
+                                <div class="space_2"></div>
+                            </div>
+                        </div>
+                        <div class="common_wrapper">
+                            <p class="hira_w3 line_h_200 main_txt_color txt_tpad_2 txt_bpad_2 txt_mg_0 font_100 txt_left">ご相談、お見積もりさせていただいた後は、追加料金は一切いただきません！不明点や懸念事項などございましたらご相談時にお気軽にお知らせください。経験のあるエコロジック専門スタッフがしっかりとご対応いたします。</p>
+                        </div>
+                    </div>
+
+                    <div class="wrapper_100">
+                        <div class="bg_img">
+                            <img src="assets/img/sp_img_box_2.png" class="fix_zoom" alt="">
+                            <div class="bl_0">
+                                <p class="width_60 txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold hira_w6"
+                                style="background: rgba(0, 162, 244, 0.7) !important;">専門家が在籍</p>
+                            <p class="width_100 txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold tspace_05 bspace_05 hira_w6"
+                                style="background: rgba(0, 162, 244, 0.7) !important;">捨て方がわからないゴミも</p>
+                            <p class="width_80 txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold hira_w6"
+                                style="background: rgba(0, 162, 244, 0.7) !important;">まるっとおまかせ！</p>
+                            <div class="space_2"></div>
+                            </div>
+                        </div>
+                        <div class="common_wrapper">
+                            <p class="hira_w3 line_h_200 main_txt_color txt_tpad_2 txt_bpad_2 txt_mg_0 font_100 txt_left">ご相談、お見積もりさせていただいた後は、追加料金は一切いただきません！不明点や懸念事項などございましたらご相談時にお気軽にお知らせください。経験のあるエコロジック専門スタッフがしっかりとご対応いたします。</p>
+                        </div>
+                    </div>
+
+                    <div class="wrapper_100">
+                        <div class="bg_img">
+                            <img src="assets/img/sp_img_box_3.png" class="fix_zoom" alt="">
+                            <div class="bl_0">
+                                <p class="width_100 txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold hira_w6"
+                                style="background: rgba(0, 162, 244, 0.7) !important;">15時までにお電話いただければ</p>
+                            <p class="width_50 txt_left txt_lpad_2 txt_rpad_2 txt_tpad_05 txt_bpad_05 white txt_mg_0 font_100 bold tspace_05 bspace_05 hira_w6"
+                                style="background: rgba(0, 162, 244, 0.7) !important;">即日対応！</p>
+                            <div class="space_2"></div>
+                            </div>
+                        </div>
+                        <div class="common_wrapper">
+                            <p class="hira_w3 line_h_200 main_txt_color txt_tpad_2 txt_bpad_2 txt_mg_0 font_100 txt_left">ご相談、お見積もりさせていただいた後は、追加料金は一切いただきません！不明点や懸念事項などございましたらご相談時にお気軽にお知らせください。経験のあるエコロジック専門スタッフがしっかりとご対応いたします。</p>
+                        </div>
+                    </div>
+        </section>
+        <section class="sec-5">
+            <div class="space_2"></div>
+            <div class="view_pc">
+                <div class="cont_wrapper_65">
+                    <div class="wrapper_25 txt_tpad_2 txt_bpad_2">
+                        <img class="fix_zoom undrag" src="assets/img/section_6_pc_title.png" alt="">
+                    </div>
+                    <div class="width_100 bg_img">
+                        <div class="flex_2 flex_center">
+                            <div class="width_50 txt_rpad_05">
+                                <img class="fix_zoom undrag" src="assets/img/pc_1r_1k_19,800.png" alt="">
+                            </div>
+                            <div class=" width_50 txt_lpad_1">
+                                <img class="fix_zoom undrag" src="assets/img/pc_1k_1dk_34,800.png" alt="">
+                            </div>
+
+                            <div class="f_sub width_50 txt_center bg_img" style="top: -6vw">
+                                <p class="txt_mg_0 bold font_100 hira_w6">単身の方の大掃除や、単品の家電、<br>
+                                    古くなった家具など。</p>
+                            </div>
+                            <div class="f_sub width_50 txt_center bg_img" style="top: -6vw">
+                                <p class="txt_mg_0 bold font_100 hira_w6">軽トラックでは少し不安な量のゴミも、<br>
+                                    小規模な業務用関連のゴミもおまかせ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width_100 bg_img" style="margin-top: -3vw;">
+                        <div class="flex_2 flex_center">
+                            <div class="width_50 txt_rpad_05">
+                                <img class="fix_zoom undrag" src="assets/img/pc_2dk_2ldk_59,800.png" alt="">
+                            </div>
+                            <div class=" width_50 txt_lpad_1">
+                                <img class="fix_zoom undrag" src="assets/img/pc_2ldk_59,800.png" alt="">
+                            </div>
+
+                            <div class="f_sub width_50 txt_center bg_img" style="top: -6vw">
+                                <p class="txt_mg_0 bold font_100 hira_w6">多めのゴミを出したい！<br>
+                                    小規模な業務用関連のゴミもおまかせ</p>
+                            </div>
+                            <div class="f_sub width_50 txt_center bg_img" style="top: -6vw">
+                                <p class="txt_mg_0 bold font_100 hira_w6">一軒家のゴミを丸ごと！<br>
+                                    それ以上もご相談ください。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MOBILE VIEW -->
+            <div class="view_tabsp">
+                <div class="wrapper_100">
+                    <div class="bg_img">
+                        <img src="assets/img/sp_header_bg.png" class="fix_zoom undrag" alt="">
+                        <p class="t_50 hira_w6 font_150 white bold">料金プラン</p>
+                    </div>
+                    <div class="wrapper_100">
+                        <img src="assets/img/sp_1r_1k_19,800.png" class="fix_zoom undrag" alt="">
+                        <p class="font_100 hira_w3 txt_center txt_bpad_05 main_txt_color">単身の方の大掃除や、単品の家電、<br>
+                            古くなった家具など。</p>
+                    </div>
+                    <div class="wrapper_100">
+                        <img src="assets/img/sp_1k_1dk_34,800.png" class="fix_zoom undrag" alt="">
+                        <p class="font_100 hira_w3 txt_center txt_bpad_05 main_txt_color">軽トラックでは少し不安な量のゴミも、<br>
+                            小規模な業務用関連のゴミもおまかせ</p>
+                    </div>
+                    <div class="wrapper_100">
+                        <img src="assets/img/sp_2dk_2ldk_59,800.png" class="fix_zoom undrag" alt="">
+                        <p class="font_100 hira_w3 txt_center txt_bpad_05 main_txt_color">多めのゴミを出したい！<br>
+                            小規模な業務用関連のゴミもおまかせ</p>
+                    </div>
+                    <div class="wrapper_100">
+                        <img src="assets/img/sp_2ldk_59,800.png.png" class="fix_zoom undrag" alt="">
+                        <p class="font_100 hira_w3 txt_center txt_bpad_05 main_txt_color">一軒家のゴミを丸ごと！<br>
+                            それ以上もご相談ください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-6" style="background-color: #00a3e0;">
+            <div class="wrapper_65 view_pc">
+                <div class="space_2"></div>
+                <div class="wrapper_55">
+                    <img class="fix_zoom undrag" src="assets/img/cv_title.png" alt="">
+                </div>
+                <div class="space_2"></div>
+
+                <div class="bg_white box_radius_10">
+                    <div class="wrapper_95 txt_tpad_2 txt_bpad_2">
+                        <div class="flex flex_center">
+                            <div class="wrapper_65">
+                                <div class="wrapper_100">
+                                    <div class="wrapper_95">
+                                        <img src="assets/img/cv_tel_img.png" class="fix_zoom undrag width_60" alt="">
+                                    </div>
+                                    <div class="space_05"></div>
+                                    <p class="shingopro_medium font_150 txt_mg_0 main_txt_color">全て専門家が対応！
+                                    <span class="shingopro_medium font_150" style="color: #00a3e0;"> 受付時間 8:00〜22:00</span></p>
+                                </div>
+                            </div>
+                            <div class="width_34">
+                                <div class="wrapper_100">
+                                    <img src="assets/img/cv_btn_line.png" class="fix_zoom undrag" alt="">
+                                    <div class="space_1"></div>
+                                    <img src="assets/img/cv_btn_contactus.png" class="fix_zoom undrag" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space_3"></div>
+            </div>
+
+            <div class="view_tabsp wrapper_100 bg_white">
+                <div class="space_2"></div>
+                <div class="common_wrapper">
+                    <div class="space_1"></div>
+                    <div class="wrapper_90">
+                        <img src="assets/img/sp_cv_text.png" class="fix_zoom undrag" alt="">
+                        <div class="space_2"></div>
+                    </div>
+                    <div class="wrapper_100">
+                            <img src="assets/img/bt_tel.png" class="fix_zoom square_btn undrag" alt="">
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100">
+                            <img src="assets/img/bt_line.png" class="fix_zoom square_btn undrag" alt="">
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100">
+                            <img src="assets/img/bt_inquiry.png" class="fix_zoom square_btn undrag" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-7">
+            <div class="view_pc">
+                <div class="cont_wrapper_65">
+                    <div class="space_5"></div>
+                    <div class="wrapper_20">
+                        <img src="assets/img/area_header_text_img.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="wrapper_25" style="border-bottom: 5px solid #00a3e0"></div>
+                    <div class="space_3"></div>
+                    <img class="fix_zoom undrag" src="assets/img/area_map.png " alt="">
+                    <div class="space_2"></div>
+
+                    <div class="wrapper_100 box_radius_10 txt_tpad_2 txt_bpad_2 bg_ww_grey">
+                        <div class="wrapper_95 u_line_t_w_grey">
+                            <div class="flex">
+                                <div class="width_10">
+                                    <div class="space_05"></div>
+                                    <p class="font_125 bold main_txt_color2 txt_left hira_w6 txt_mg_0">東京</p>
+                                </div>
+                                <div class="width_90">
+                                    <div class="space_05"></div>
+                                    <p class="font_75 line_h_200 txt_left main_txt_color txt_lpad_05 hira_w3 txt_mg_0">
+                                        東京23区、八王子市、立川市、武蔵野市、三鷹市、青梅市、府中市、昭島市、調布市、町田市、小金井市、小平市、
+                                        日野市、東村山市、国分寺市、国立市、福生市、狛江市、東大和市、清瀬市、東久留米市、武蔵村山市、多摩市、稲城市、
+                                        羽村市、あきる野市、西東京市、瑞穂町、日の出町、檜原村、奥多摩町</p>
+                                </div>
+                                <div class="space_1"></div>
+                            </div>
+                        </div>
+                        <div class="space_1"></div>
+
+                        <div class="wrapper_95 u_line_t_w_grey">
+                            <div class="flex">
+                                <div class="width_10">
+                                    <div class="space_05"></div>
+                                    <p class="font_125 bold main_txt_color2 txt_left hira_w6 txt_mg_0">埼玉</p>
+                                </div>
+                                <div class="width_90">
+                                    <div class="space_05"></div>
+                                    <p class="font_75 line_h_200 txt_left main_txt_color txt_lpad_05 hira_w3 txt_mg_0">
+                                        さいたま市（中央区・桜区・浦和区・南区・緑区・西区・北区・大宮区・見沼区・岩槻区）、川越市、熊谷市、
+                                        川口市、行田市、秩父市、所沢市、飯能市、加須市、本庄市、東松山市、春日部市、狭山市、羽生市、鴻巣市、
+                                        深谷市、上尾市、草加市、越谷市、蕨市、戸田市、入間市、朝霞市、志木市、和光市、新座市、桶川市、久喜市、
+                                        北本市、八潮市、富士見市、三郷市、蓮田市、坂戸市、幸手市、鶴ヶ島市、日高市、吉川市、ふじみ野市、白岡市、
+                                        伊奈町、三芳町、毛呂山町、越生町、滑川町、嵐山町、小川町、川島町、吉見町、鳩山町、ときがわ町、横瀬町、皆野町、
+                                        長瀞町、小鹿野町、東秩父村、美里町、神川町、上里町、寄居町、宮代町、杉戸町、松伏町</p>
+                                </div>
+                                <div class="space_1"></div>
+                            </div>
+                        </div>
+                        <div class="space_1"></div>
+
+                        <div class="wrapper_95 u_line_t_w_grey">
+                            <div class="flex">
+                                <div class="width_10">
+                                    <div class="space_05"></div>
+                                    <p class="font_125 bold main_txt_color2 txt_left hira_w6 txt_mg_0">神奈川</p>
+                                </div>
+                                <div class="width_90">
+                                    <div class="space_05"></div>
+                                    <p class="font_75 line_h_200 txt_left main_txt_color txt_lpad_05 hira_w3 txt_mg_0">
+                                        横浜市（中区・南区・磯子区・金沢区・港南区・鶴見区・神奈川区・港北区・緑区・青葉区・都筑区・保土ヶ谷区・
+                                        西区・旭区・瀬谷区・戸塚区・栄区・泉区）、川崎市、横須賀市、鎌倉市、逗子市、三浦市、葉山町、相模原市、
+                                        厚木市、大和市、海老名市、座間市、綾瀬市、愛川町、清川村、平塚市、藤沢市、茅ヶ崎市、秦野市、伊勢原市、
+                                        寒川町、大磯町、二宮町、小田原市、南足柄市、中井町、大井町、松田町、山北町、開成町、箱根町、真鶴町、湯河原町</p>
+                                </div>
+                                <div class="space_1"></div>
+                            </div>
+                        </div>
+                        <div class="space_1"></div>
+
+                        <div class="wrapper_95">
+                            <div class="flex">
+                                <div class="width_10">
+                                    <div class="space_05"></div>
+                                    <p class="font_125 bold main_txt_color2 txt_left hira_w6 txt_mg_0">千葉</p>
+                                </div>
+                                <div class="width_90">
+                                    <div class="space_05"></div>
+                                    <p class="font_75 line_h_200 txt_left main_txt_color txt_lpad_05 hira_w3 txt_mg_0">
+                                        千葉市（中央区・花見川区・稲毛区・若葉区・緑区・美浜区）、銚子市、市川市、船橋市、館山市、木更津市、
+                                        松戸市、野田市、茂原市、成田市、佐倉市、東金市、旭市、習志野市、柏市、勝浦市、市原市、流山市、八千代市、
+                                        我孫子市、鴨川市、鎌ケ谷市、君津市、富津市、浦安市、四街道市、袖ケ浦市、八街市、印西市、白井市、富里市、
+                                        南房総市、匝瑳市、香取市、山武市、いすみ市、大網白里市、酒々井町、栄町、神崎町、多古町、東庄町、九十九里町、
+                                        芝山町、横芝光町、一宮町、睦沢町、長生村、白子町、長柄町、長南町、大多喜町、御宿町、鋸南町</p>
+                                </div>
+                                <div class="space_1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space_3"></div>
+                </div>
+            </div>
+            <!-- MOBILE VIEW -->
+            <div class="view_tabsp">
+                <div class="space_3"></div>
+                <div class="wrapper_100">
+                    <div class="bg_img">
+                        <img src="assets/img/sp_title_map.png" class="fix_zoom undrag" alt="">
+                        <div class="t0_l50" style="top: 10%;">
+                            <p class="hira_w6 font_150 white bold">対応地域</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space_2"></div>
+                <div class="wrapper_100" style="background-color:#ccedf9;">
+                    <div class="space_4"></div>
+                    <div class="wrapper_90 bg_white box_radius_10 txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2">
+                        <div class="space_1"></div>
+                        <p class="font_125 bold main_txt_color2 txt_mg_0 txt_center hira_w6">東京</p>
+                        <div class="space_05"></div>
+                        <p class="hira_w3 txt_left line_h_200 main_txt_color txt_mg_0" style="font-size: 3.2vw;">東京23区、八王子市、立川市、武蔵野市、三鷹市、青梅市、府中市、昭島市、調布市、町田市、小金井市	、小平市、日野市、東村山市、国分寺市、国立市、福生市、狛江市、東大和市	、清瀬市	、東久留米市	、武蔵村山市、多摩市、稲城市、羽村市、あきる野市、西東京市、瑞穂町、日の出町、檜原村、奥多摩町</p>
+                        <div class="space_2"></div>
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_90 bg_white box_radius_10 txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2">
+                        <div class="space_1"></div>
+                        <p class="font_125 bold main_txt_color2 txt_mg_0 txt_center hira_w6">埼玉</p>
+                        <div class="space_05"></div>
+                        <p class="hira_w3 txt_left line_h_200 main_txt_color txt_mg_0" style="font-size: 3.2vw;">さいたま市（中央区・桜区・浦和区・南区・緑区・西区・北区・大宮区・見沼区・岩槻区）、川越市、熊谷市、川口市、行田市、秩父市、所沢市、飯能市、加須市、本庄市、東松山市、春日部市、狭山市、羽生市、鴻巣市、深谷市、上尾市、草加市、越谷市、蕨市、戸田市、入間市、朝霞市、志木市、和光市、新座市、桶川市、久喜市、北本市、八潮市、富士見市、三郷市、蓮田市、坂戸市、幸手市、鶴ヶ島市、日高市、吉川市、ふじみ野市、白岡市、伊奈町、三芳町、毛呂山町、越生町、滑川町、嵐山町、小川町、川島町、吉見町、鳩山町、ときがわ町、横瀬町、皆野町、長瀞町、小鹿野町、東秩父村、美里町、神川町、上里町、寄居町、宮代町、杉戸町、松伏町</p>
+                        <div class="space_1"></div>
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_90 bg_white box_radius_10 txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2">
+                        <div class="space_1"></div>
+                        <p class="font_125 bold main_txt_color2 txt_mg_0 txt_center hira_w6">神奈川</p>
+                        <div class="space_05"></div>
+                        <p class="hira_w3 txt_left line_h_200 main_txt_color txt_mg_0" style="font-size: 3.2vw;">横浜市（中区・南区・磯子区・金沢区・港南区・鶴見区・神奈川区・港北区・緑区・青葉区・都筑区・保土ヶ谷区・西区・旭区・瀬谷区・戸塚区・栄区・泉区）、川崎市、横須賀市、鎌倉市、逗子市、三浦市、葉山町、相模原市、厚木市、大和市、海老名市、座間市、綾瀬市、愛川町、清川村、平塚市、藤沢市、茅ヶ崎市、秦野市、伊勢原市、寒川町、大磯町、二宮町、小田原市、南足柄市、中井町、大井町、松田町、山北町、開成町、箱根町、真鶴町、湯河原町</p>
+                        <div class="space_1"></div>
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_90 bg_white box_radius_10 txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2">
+                        <div class="space_1"></div>
+                        <p class="font_125 bold main_txt_color2 txt_mg_0 txt_center hira_w6">千葉</p>
+                        <div class="space_05"></div>
+                        <p class="hira_w3 txt_left line_h_200 main_txt_color txt_mg_0" style="font-size: 3.2vw;">千葉市（中央区・花見川区・稲毛区・若葉区・緑区・美浜区）、銚子市、市川市、船橋市、館山市、木更津市、松戸市、野田市、茂原市、成田市、佐倉市、東金市、旭市、習志野市、柏市、勝浦市、市原市、流山市、八千代市、我孫子市、鴨川市、鎌ケ谷市、君津市、富津市、浦安市、四街道市、袖ケ浦市、八街市、印西市、白井市、富里市、南房総市、匝瑳市、香取市、山武市、いすみ市、大網白里市、酒々井町、栄町、神崎町、多古町、東庄町、九十九里町、芝山町、横芝光町、一宮町、睦沢町、長生村、白子町、長柄町、長南町、大多喜町、御宿町、鋸南町</p>
+                        <div class="space_1"></div>
+                    </div>
+                    <div class="space_4"></div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-8">
+            <div class="view_pc wrapper_100" style="background: #E0F6FF;">
+                <div class="cont_wrapper_65">
+                    <div class="space_5"></div>
+                    <div class="wrapper_20">
+                        <img src="assets/img/customer_voice_header_text_img.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="wrapper_25" style="border-bottom: 5px solid #00a3e0"></div>
+                    <div class="space_3"></div>
+
+                    <div class="wrapper_100 bg_img">
+                        <img src="assets/img/girl_1.png" class="fix_zoom undrag" alt="">
+                        <div class="br_0" style="bottom: 17%;right: 6%;">
+                            <p class="font_75 txt_lpad_05 txt_left main_txt_color line_h_200 hira_w6" style="letter-spacing: 1px;">
+                                彼との同居を期に引っ越すことになったのですが、不要な家具が多々あることに気づき、、、。<br>
+                                少しでも引っ越し代を抑えたいので処分することにしました。スタッフの方に相談すると時間も掛から<br>
+                                ず見積もりをいただけて、しかもその日に引き取ってもらえました！<br>
+                                大きな家具は一人では粗大ゴミにも出せなかったのでとても助かりました。ありがとうございました！</p>
+                        </div>
+                        <div class="space_2"></div>
+                    </div>
+
+                    <div class="wrapper_100 bg_img">
+                        <img src="assets/img/boy.png" class="fix_zoom undrag" alt="">
+                        <div class="br_0" style="bottom: 14%; left: 4%;">
+                            <p class="font_75 txt_lpad_05 txt_left main_txt_color line_h_200 hira_w6" style="letter-spacing: 1px;">
+                                自宅で過ごす時間が増えたので、部屋の整理を兼ねて断捨離をしたのはいいのですが、大きなゴミを捨<br>
+                                てたいのに地域の業者さんと私の都合が合わず、困っていました。インターネットの広告を見て問い合 <br>
+                                わせてみたのですが、翌日に来てくださり、大きな家具や家電ゴミも全て回収していただくことができ<br>ました。<br>
+                                もっと早くお願いすればよかった！と思いましたが、部屋がスッキリしたのでよかったです。</p>
+                        </div>
+                        <div class="space_2"></div>
+                    </div>
+
+                    <div class="wrapper_100 bg_img">
+                        <img src="assets/img/girl_2.png" class="fix_zoom undrag" alt="">
+                        <div class="br_0" style="bottom: 17%;right: 6%;">
+                            <p class="font_75 txt_lpad_05 txt_left main_txt_color line_h_200 hira_w6" style="letter-spacing: 1px;">
+                                母が亡くなり、頼れる人も遠方だったので随分長い間、そのままにしていました。気持ちが落ち着き、<br>
+                                実家の整理をしようと思った時に、エコロジックのページを見て、実家も対応エリアだったので問い合<br>
+                                わせてみました。電話の方がとても丁寧で、遺品整理も受けてくださるとのことだったので実家まで来<br>
+                                ていただきました。遺品の整理はもちろんですが、庭に放置してあった捨てるに捨てられないゴミも引<br>き取ってくださいました。<br>
+                                作業してくださった方もお電話の方も、困っていた状況でわかりやすく提案してくださり、感謝の気持<br>ちでいっぱいです。</p>
+                        </div>
+                        <div class="space_3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE VIEW -->
+            <div class="view_tabsp">
+                <div class="wrapper_100">
+                    <div class="space_5"></div>
+                    <div class="bg_img">
+                        <img src="assets/img/sp_header_bg.png" class="fix_zoom undrag" alt="">
+                        <p class="hira_w6 font_200 white t_50">お客様の声</p>
+                    </div>
+                </div>
+                <div class="wrapper_100">
+                    <div class="bg_img">
+                        <img src="assets/img/sp_girl_1.png" class="fix_zoom undrag" alt="">
+                        <div class="t0_l50 width_60 lspace_5 tspace_1">
+                            <p class="font_100 txt_left bold hira_w6 txt_left txt_lpad_05" style="color: #fc868c;">一人で家具を運べないので助かりました！</p>
+                        </div>
+                        <div class="width_90 t_50" style="bottom: 20%; left: 6.5%;">
+                            <p class="hira_w3 main_txt_color txt_mg_0 line_h_200 txt_left txt_lpad_05" style="font-size: 3.2vw;">
+                                自宅で過ごす時間が増えたので、部屋の整理を兼ねて断捨離をしたのはいいのですが、大きなゴミを捨
+                                てたいのに地域の業者さんと私の都合が合わず、困っていました。<br>
+                                インターネットの広告を見て問い合わせてみたのですが、翌日に来てくださり、大きな家具や家電ゴミ
+                                も全て回収していただくことができました。<br>
+                                もっと早くお願いすればよかった！と思いましたが、部屋がスッキリしたのでよかったです。</p>
+                        </div>
+                        <div class="space_2"></div>
+                    </div>
+                </div>
+
+                <div class="wrapper_100">
+                    <div class="bg_img">
+                        <img src="assets/img/sp_boy_2.png" class="fix_zoom undrag" alt="">
+                        <div class="t0_l50 width_60 lspace_5">
+                            <p class="font_100 txt_left bold hira_w6 txt_left txt_lpad_05" style="color: #376999;">
+                                家財整理を依頼したのですが、とても丁寧に対応してくださいました。</p>
+                        </div>
+                        <div class="width_90 t_50" style="bottom: 20%; left: 6.5%;">
+                            <p class="hira_w3 main_txt_color txt_mg_0 line_h_200 txt_left txt_lpad_05" style="font-size: 3.2vw;">
+                                自宅で過ごす時間が増えたので、部屋の整理を兼ねて断捨離をしたのはいいのですが、大きなゴミを捨
+                                てたいのに地域の業者さんと私の都合が合わず、困っていました。<br>
+                                インターネットの広告を見て問い合わせてみたのですが、翌日に来てくださり、大きな家具や家電ゴミ
+                                も全て回収していただくことができました。<br>
+                                もっと早くお願いすればよかった！と思いましたが、部屋がスッキリしたのでよかったです。</p>
+                        </div>
+                        <div class="space_2"></div>
+                    </div>
+                </div>
+
+                <div class="wrapper_100">
+                    <div class="bg_img">
+                        <img src="assets/img/sp_girl_2.png" class="fix_zoom undrag" alt="">
+                        <div class="t0_l50 width_60 lspace_5">
+                            <p class="font_100 txt_left bold hira_w6 txt_left txt_lpad_05" style="color: #fc868c;">
+                                家財整理を依頼したのですが、とても丁寧に対応してくださいました。</p>
+                        </div>
+                        <div class="width_90 t_50" style="bottom: 10%; left: 6.5%;">
+                            <p class="hira_w3 main_txt_color txt_mg_0 line_h_200 txt_left txt_lpad_05" style="font-size: 3.2vw;">
+                                母が亡くなり、頼れる人も遠方だったので随分長い間、そのままにしていました。気持ちが落ち着き、
+                                実家の整理をしようと思った時に、エコロジックのページを見て、実家も対応エリアだったので問い合わせてみました。<br>
+                                電話の方がとても丁寧で、遺品整理も受けてくださるとのことだったので実家まで来ていただきまし
+                                た。遺品の整理はもちろんですが、庭に放置してあった捨てるに捨てられないゴミも引き取ってくださいました。<br>
+                                作業してくださった方もお電話の方も、困っていた状況でわかりやすく提案してくださり、感謝の気持ちでいっぱいです。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space_3"></div>
+            </div>
+        </section>
+        <section class="sec-9">
+            <div class="view_pc">
+                <div class="space_5"></div>
+                <div class="cont_wrapper_65">
+                    <div class="wrapper_85">
+                        <img src="assets/img/section_10_header_text.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_3"></div>
+                    <div class="wrapper_100 bg_img">
+                        <img src="assets/img/section_10_img_1.png" class="fix_zoom undrag" alt="">
+                        <p class="t50_l0 lspace_4 hira_w6 font_100 white line_h_200 txt_left">
+                            Webフォーム、お電話、LINEからお気軽にお問い合わせください。<br>
+                            お問い合わせいただいた後、スタッフよりご連絡させていただきます。その際にお伺い<br>
+                            する日時をお知らせください。お困りの状況につきましても詳しくお聞かせください。
+                        </p>
+                    </div>
+                    <div class="wrapper_100 bg_img" style="margin-top: -3.79vw;">
+                        <img src="assets/img/section_10_img_2.png" class="fix_zoom undrag" alt="">
+                        <p class="t50_l0 lspace_4 tspace_2 hira_w6 font_100 white line_h_200 txt_left">
+                            ご都合のよい日時に現場までお伺いさせていただきます。<br>
+                            引き取り場所に訪問させていただき、不用品の量や大きさを確認させていただき、<br>
+                            しっかりとお見積金額をださせていただきます。<br>
+                            訪問見積が難しい場合は、LINEやメールでのWEB見積もりも可能です。
+                        </p>
+                    </div>
+                    <div class="wrapper_100 bg_img" style="margin-top: -3.79vw;">
+                        <img src="assets/img/section_10_img_3.png" class="fix_zoom undrag" alt="">
+                        <p class="t50_l0 lspace_4 tspace_2 hira_w6 font_100 white line_h_200 txt_left" style="letter-spacing: -1px;">
+                            お見積もりにご納得いただけましたら、ご都合のよい日時に伺い、作業させていた<br>だきます。<br>
+                            ※お見積もりの後に即対応も可能です！お気軽にお申し付けください。
+                        </p>
+                    </div>
+                    <div class="wrapper_100 bg_img" style="margin-top: -3.79vw;">
+                        <img src="assets/img/section_10_img_4.png" class="fix_zoom undrag" alt="">
+                        <p class="t50_l0 lspace_4 tspace_4 hira_w6 font_100 white line_h_200 txt_left">
+                            作業が完了しましたら、お客様に最終確認をしていただき、作業完了となります。<br>
+                            お支払いは現金またはクレジットカード（VISA、マスター、AMEX、JCB）でお<br>支払いください。
+                        </p>
+                    </div>
+                </div>
+                <div class="space_5"></div>
+            </div>
+
+            <div class="view_tabsp">
+                <div class="space_3"></div>
+                <div class="wrapper">
+                    <div class="bg_img">
+                        <img src="assets/img/sp_header_bg.png" class="fix_zoom undrag" alt="">
+                        <p class="t_50 hira_w6 font_150 white bold">お問い合わせから<br>
+                            引き取りまでの流れ</p>
+                    </div>
+                </div>
+                <div class="space_1"></div>
+                <div class="wrapper_100">
+                    <div class="wrapper_95">
+                        <img src="assets/img/sp_section_10_img_1.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="common_wrapper">
+                        <p class="hira_w3 font_100 line_h_200 txt_left main_txt_color">
+                            Webフォーム、お電話、LINEからお気軽にお問い合わせください。<br>
+                            お問い合わせいただいた後、スタッフよりご連絡させていただきます。その際にお伺いする日時をお知らせください。
+                            お困りの状況につきましても詳しくお聞かせください。
+                        </p>
+                    </div>
+                    <div class="space_3"></div>
+                    <div class="wrapper_95">
+                        <img src="assets/img/sp_section_10_img_2.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="common_wrapper">
+                        <p class="hira_w3 font_100 line_h_200 txt_left main_txt_color">
+                            ご都合のよい日時に現場までお伺いさせていただきます。<br>
+                            引き取り場所に訪問させていただき、不用品の量や大きさを確認させていただき、
+                            しっかりとお見積金額をださせていただきます。
+                            訪問見積が難しい場合は、LINEやメールでのWEB見積もりも可能です。
+                        </p>
+                    </div>
+                    <div class="space_3"></div>
+
+                    <div class="wrapper_95">
+                        <img src="assets/img/sp_section_10_img_3.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="common_wrapper">
+                        <p class="hira_w3 font_100 line_h_200 txt_left main_txt_color">
+                            お見積もりにご納得いただけましたら、ご都合のよい日時に伺い、作業させていただきます。<br class="space_2"/>
+                            <span class="hira_w3 font_100 red">※お見積もりの後に即対応も可能</span>です！お気軽にお申し付けください。
+                        </p>
+                    </div>
+                    <div class="space_3"></div>
+
+                    <div class="wrapper_95">
+                        <img src="assets/img/sp_section_10_img_4.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_1"></div>
+                    <div class="common_wrapper">
+                        <p class="hira_w3 font_100 line_h_200 txt_left main_txt_color">
+                            作業が完了しましたら、お客様に最終確認をしていただき、作業完了となります。<br>
+                            お支払いは現金またはクレジットカード（VISA、マスター、AMEX、JCB）でお支払いください。
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+
+
+        <section class="sec-10">
+            <div class="view_pc">
+                <div class="cont_wrapper_65">
+                    <div class="wrapper_20">
+                        <img src="assets/img/qa_header_text_img.png" class="fix_zoom undrag" alt="">
+                    </div>
+                    <div class="space_2"></div>
+                    <div class="wrapper_100 bg_wht_grey txt_tpad_2 txt_bpad_2">
+                        <div class="flex flex_center">
+                            <div class="width_3"></div>
+                            <div class="width_10 u_line_m_w_grey txt_bpad_1">
+                                <img src="assets/img/q1.png" alt="">
+                            </div>
+                            <div class="width_80 txt_left txt_tpad_1">
+                                <p class="font_125 hira_w6 main_txt_color2 txt_mg_0 txt_tpad_05">見積もりだけでも来てもらえますか？</p><br/>
+                                <p class="hira_w3 txt_mg_0 main_txt_color font_100">もちろん可能です。料金は無料です。</p>
+                            </div>
+                        </div>
+                        <div class="space_2"></div>
+
+                        <div class="flex flex_center">
+                            <div class="width_3"></div>
+                            <div class="width_10 u_line_m_w_grey txt_bpad_1">
+                                <img src="assets/img/q2.png" alt="">
+                            </div>
+                            <div class="width_80 txt_left txt_tpad_1">
+                                <p class="font_125 hira_w6 main_txt_color2 txt_mg_0 txt_tpad_05">壊れたものや汚れたものでも引き取りいただけますか？</p><br/>
+                                <p class="hira_w3 txt_mg_0 main_txt_color font_100">引き取り可能です。</p>
+                            </div>
+                        </div>
+                        <div class="space_2"></div>
+                        <div class="flex flex_center">
+                            <div class="width_3"></div>
+                            <div class="width_10 u_line_m_w_grey txt_bpad_1">
+                                <img src="assets/img/q3.png" alt="">
+                            </div>
+                            <div class="width_80 txt_left txt_tpad_1">
+                                <p class="font_125 hira_w6 main_txt_color2 txt_mg_0 txt_tpad_05">買取もしてもらえますか？</p><br/>
+                                <p class="hira_w3 txt_mg_0 main_txt_color font_100">基本的に処分品の引取のみです。</p>
+                            </div>
+                        </div>
+                        <div class="space_2"></div>
+                        <div class="flex flex_center">
+                            <div class="width_3"></div>
+                            <div class="width_10 u_line_m_w_grey txt_bpad_1">
+                                <img src="assets/img/q4.png" alt="">
+                            </div>
+                            <div class="width_80 txt_left txt_tpad_1">
+                                <p class="font_125 hira_w6 main_txt_color2 txt_mg_0 txt_tpad_05">家の中を破損、汚された場合の保証などはありますか？</p><br/>
+                                <p class="hira_w3 txt_mg_0 main_txt_color font_100">家屋保険に加入しております。万が一の場合はしっかりと補償いたします。</p>
+                            </div>
+                        </div>
+                        <div class="space_2"></div>
+                        <div class="flex flex_center">
+                            <div class="width_3"></div>
+                            <div class="width_10 u_line_m_w_grey txt_bpad_1">
+                                <img src="assets/img/q5.png" alt="">
+                            </div>
+                            <div class="width_80 txt_left txt_tpad_1">
+                                <p class="font_125 hira_w6 main_txt_color2 txt_mg_0 txt_tpad_05">不在時に引き取りだけでもしていただけますか？</p><br/>
+                                <p class="hira_w3 txt_mg_0 main_txt_color font_100">可能です。ただし、事前にカード決算が必要です。</p>
+                            </div>
+                        </div>
+                        <div class="space_2"></div>
+                        <div class="flex flex_center">
+                            <div class="width_3"></div>
+                            <div class="width_10 u_line_m_w_grey txt_bpad_1">
+                                <img src="assets/img/q6.png" alt="">
+                            </div>
+                            <div class="width_80 txt_left txt_tpad_1">
+                                <p class="font_125 hira_w6 main_txt_color2 txt_mg_0 txt_tpad_05">トラックに積みきれなかった場合は追加料金になりますか？</p><br/>
+                                <p class="hira_w3 txt_mg_0 main_txt_color font_100">かかります。積みきれなかった不用品の再見積もりをさせていただきます。</p>
+                            </div>
+                        </div>
+                        <div class="space_2"></div>
+                    </div>
+                </div>
+                <div class="space_5"></div>
+            </div>
+        </section>
+        <section class="sec-11" style="background-color: #00a3e0;">
+            <div class="view_pc">
+                <div class="cont_wrapper_65 txt_center">
+                    <div class="wrapper_55">
+                        <div class="space_3"></div>
+                        <img src="assets/img/cv_title.png" class="fix_zoom undrag" alt="">
+                        <div class="space_2"></div>
+                    </div>
+                    <div class="wrapper_100 box_radius_10 bg_white">
+                        <div class="wrapper_95 txt_tpad_2 txt_bpad_2">
+                            <div class="flex flex_center">
+                                <div class="wrapper_65">
+                                    <div class="wrapper_100">
+                                        <div class="wrapper_95">
+                                            <img src="assets/img/cv_tel_img.png" class="fix_zoom undrag width_60" alt="">
+                                        </div>
+                                        <div class="space_05"></div>
+                                            <p class="shingopro_medium font_150 txt_mg_0 main_txt_color">全て専門家が対応！
+                                            <span class="shingopro_medium font_150" style="color: #00a3e0;"> 受付時間 8:00〜22:00</span></p>
+                                    </div>
+                                </div>
+                                <div class="width_35">
+                                    <div class="wrapper_100">
+                                        <img src="assets/img/cv_btn_line.png" class="fix_zoom undrag square_btn" alt="">
+                                        <div class="space_1"></div>
+                                        <img src="assets/img/cv_btn_contactus.png" class="fix_zoom undrag square_btn" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space_3"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="view_pc">
+        <div class="wrapper_100 txt_tpad_2 txt_bpad_2" style="background-color: #e5f6fc;">
+            <div class="cont_wrapper_65">
+                <div class="flex flex_center">
+                    <div class="width_20">
+                        <div class="wrapper_100">
+                            <img src="assets/img/head_logo.png" class="fix_zoom undrag" alt="">
+                        </div>
+                    </div>
+                    <div class="width_5"></div>
+                    <div class="width_30 txt_left">
+                        <p class="hira_w3 font_65 main_txt_color txt_left">
+                            〒146-0081　東京都大田区仲池上1-24-5 <br>
+                            電話：0120-065-786</p>
+                    </div>
+                    <div class="width_4"></div>
+                    <div class="width_25">
+                        <div class="wrapper_100">
+                            <div class="space_05"></div>
+                            <img src="assets/img/header_tel_img.png" class="fix_zoom undrag" alt="">
+                                <p class="shingopro_medium font_60 txt_tpad_05 txt_mg_0 main_txt_color">全て専門家が対応！  
+                                <span class="shingopro_medium font_65" style="color: #00a3e0;"> 受付時間 8:00〜22:00</span></p>
+                        </div>
+                    </div>
+                    <div class="width_5 flex txt_lpad_2">
+                        <div class="width_3 view_pc f_right" style="position: fixed; z-index: 9999; bottom: 2vw;">
+                            <a href="#">
+                                <img src="assets/img/btn_go_to_top.png" class="fix_zoom undrag square_btn" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $("html").easeScroll();
+    </script>
+
+</body>
+</html>
